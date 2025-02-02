@@ -1,0 +1,125 @@
+header {
+    background: url(images/Homepage.jpg) 0-200px no-repeat; /*place image as background*/;
+    background-size: 1500px;
+    /* background-poition: 0-200px; */
+    /* background-repeat: no-repeat; */
+    height: 400px; /*give header some height to display image */
+    padding-top: 100px;
+    padding-left: 100px;
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+    color: #9fc763;
+}
+li {
+    list-style-type: none;
+    display: inline;
+    padding: 20px;
+}
+li a{
+    text-decoration: none; /*remove underline from links*/;
+}
+li a:hover {
+    color: #d45a9b; /*mouseover*/
+    background-color: #9fc763;
+    padding: 15px;
+    font-size: 25px;
+}
+li a:link {
+    color: #000;
+}
+li a:visited {
+    color: #243d1c
+}
+li a:active {
+    color: #753a30;
+}
+nav {
+    font-family:'Arial Narrow Bold', sans-serif;
+    background-color: rgba(43, 60, 52, 0.562);
+    height: 50px;
+    text-align: center;
+    padding-top: 2px;
+    padding-bottom: 20px;
+    font-weight: bold;
+    font-size: 20px;
+}
+main {
+    margin: 50px;
+}
+main h1 {
+    color: #243d1c;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: lighter;
+}
+p {
+    color: #000;
+    font-size: 20px;
+    font-family: 'Arial Narrow Bold', sans-serif;
+}
+footer {
+    height: 40px;
+    background-color: rgb(43, 60, 52, 0.562);
+    text-align: center;
+    padding-top: 20px;
+    color: rgb(211,218,240)
+}
+table {
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+table, caption, th, td {
+    border: 1px solid black;
+    font-family: 'Arial Narrow Bold', sans-serif;
+    background-color: #9fc76342;
+}
+th, td {
+    width: 150px;
+    height: 35px;
+    text-align: center;
+    color: #243d1c;
+}
+caption {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-size: 20px;
+    padding: 15px;
+    color: #c44f2e;
+}
+legend {
+    font-weight: bold;
+    font-size: 30px;
+    color: #c44f2e;
+    font-family: 'Arial Narrow Bold', sans-serif;
+}
+label {
+    display: block;
+    margin: 15px;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+input[type="radio"] {
+    width: 25px;
+}
+textarea {
+    width: 300px;
+    color: #753a30;
+}
+input[type="submit"] {
+    margin: 20px 0 0 200px;
+    width: 100px; height: 30px;
+    display: block;
+    background-color: #243d1c;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 15px;
+}
+#album {
+    display: block;
+    flex-wrap: nowrap; /* Prevents wrapping to the next line */
+}
+
+#album img {
+    height: 300px; /* Maintain aspect ratio */
+}

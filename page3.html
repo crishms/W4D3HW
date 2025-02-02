@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Adopt Adog NYC</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!-- Container to wrap everything -->
+        <div id="container">
+            <header>Adopt Adog NYC</header>
+            <!-- Begin Main Navigation -->
+            <nav>
+                <ul>
+                    <li><a href="index.html">Signup</a></li>
+                    <li><a href="page2.html">Puppies</a></li>
+                    <li><a href="page3.html">Foster!</a></li>
+                </ul>
+            </nav>
+            <!-- End Main Navigation -->
+             <!-- Begin Main Content -->
+            <main>
+                <ul id="album"></ul>
+                <form action="/signup" method="post">
+                    <fieldset>
+                        <legend>Become one of our Fostering Families!</legend>
+                        <label>Enter your full name</label>
+                        <input type="text" name="name"/>
+                        <label>Where do you live?</label>
+                        <input type="text" name="name"/>
+                        <label>Enter your email</label>
+                        <input type="email" name="email" />
+                        <label>Enter your phone</label>
+                        <input type="text" name="phone" />
+                        <label>Select your gener</label>
+                        <input type="radio" name="gender" value="male"/>Male
+                        <input type="radio" name="gender" value="female"/>Female
+                        <label>How should we contact you?</label>
+                        <select>
+                            <option>Email</option>
+                            <option>Phone</option>
+                        </select>
+                        <label>Why should we consider you?</label>
+                        <textarea rows="5" columns="30"></textarea>
+                        <input type="submit" value="Signup">
+                    </fieldset>
+                </form>
+                <br/>
+            </main>
+            <!-- End Main Content -->
+        </div>
+        <!-- End Container -->
+    </body>
+    <!-- Footer Information -->
+    <footer>&copy; Copyright 2025</footer>
+    <script>
+        var photos = [];
+        var fileNames = [];
+        var imageList = [];
+        var image = [];
+        var openList = "<li id='photo'>";
+        var closeList = "</li>";
+
+        for (var i=0; i<10; i++) {
+            fileNames.push("foster"+(i+1));
+            photos.push("<img src='images/"+fileNames[i]+".jpg'>");
+            image = openList + photos[i] + closeList;
+            imageList.push(image);
+        }
+
+        document.getElementById("album").innerHTML = imageList;
+    </script>
+</html>
